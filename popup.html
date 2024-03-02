@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        padding: 0px;
+        margin:0px;
+    }
+    .content {
+        width: 360px;
+        height: 300px;
+        background-color: #161519;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px; 
+    }
+
+    .content span {
+        opacity: 0.5;
+        font-size: 22px;
+    }
+
+    .content h1 {
+        color: #fff;
+        margin-left: 5px;
+        line-height: 27px;
+        margin-top:5px;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    }
+
+    .header {
+        background-color: #1e1d22; 
+        display: flex; 
+        align-items: center;
+    }
+    #gasPrices {
+        position: relative;
+        top:15%;
+        left:12%;
+    }
+    .middle {
+        display: flex;
+        position: relative;
+        top: 20%;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    .score { 
+        width: 33%;
+        font-size:33px;
+    }
+    .score h2 {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        font-size:45px; 
+        color:#fff;
+        margin: 0px;
+    }
+    .score p {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        font-size:12px; 
+        color:#9691a3;
+        display: flex;
+        justify-content:flex-start;
+        align-items: center;
+        margin: 0px;
+    }
+    .score span {
+    height: 1.75rem;
+    width: 1.75rem;
+    position: relative; 
+    margin-right: 5px;
+    font-size: 13px; 
+    color:#fff;
+    opacity: 1;
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-image: url(https://colabrio.ams3.cdn.digitaloceanspaces.com/ohio/landing/assets/img/new/stroke.png);
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    }
+
+</style>
+
+<body>
+    <div class="content">
+        <div class="header">
+            <div>
+                <img width="50px" src="https://cdn.iconscout.com/icon/free/png-256/free-ethereum-3521413-2944857.png" alt="">
+            </div>
+            <h1>
+                <span>Ethereum</span><br>
+                Gas Tracker 
+            </h1>
+        </div> 
+        <div id="gasPrices"></div>
+        <script src="popup.js"></script>
+    </div>
+
+</body>
+
+</html>
